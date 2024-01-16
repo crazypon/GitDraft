@@ -1,5 +1,6 @@
 import java.lang.annotation.*;
 import java.lang.reflect.*;
+import PackageTest.SayHi;
 
 
 //method interface, cause it has only one method, usually is used with lambdas
@@ -72,6 +73,9 @@ class Meta3 {
 
         //Method reference using lambdas
         stringOp(StringOps::toTheUp, "i want ot break free!");
+
+        //PackageTest (to make it availalbe simply make method public)
+        SayHi.sayHi();
 
     }
 }
